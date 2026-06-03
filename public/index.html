@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoldenHourID — Because Seconds Matter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">🚨 GoldenHourID</div>
+    <div class="tagline">Because seconds matter.</div>
+  </header>
+
+  <!-- Demo Banner -->
+  <div class="demo-banner">
+    ⚡ Educational Prototype — Sample data only. Not intended for real medical use.
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Critical medical info.<br>One scan away.</h1>
+    <p>In an emergency, doctors need your blood group, allergies, and contacts instantly. GoldenHourID delivers that in under 3 seconds — no app, no login, just a QR code.</p>
+  </section>
+
+  <!-- Patients Section -->
+  <section class="patients-section">
+    <h2>Sample Profiles</h2>
+    <p class="section-subtitle">Select a profile to generate and download their emergency QR code</p>
+    <div class="patients-grid" id="patientsGrid">
+      <!-- Populated by JavaScript -->
+    </div>
+  </section>
+
+  <!-- QR Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <h3 id="modalName">Patient Name</h3>
+      <p class="modal-subtitle">Scan this QR code to view emergency info</p>
+      <img id="qrImage" src="" alt="QR Code" />
+      <a id="downloadBtn" download="GoldenHourID-QR.png">⬇ Download QR Code</a>
+      <a id="viewPageBtn" href="#" target="_blank">👁 View Emergency Page</a>
+    </div>
+  </div>
+
+  <!-- How It Works -->
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Store</h3>
+        <p>Critical medical info is encrypted with AES-256 and stored securely.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Generate</h3>
+        <p>A unique QR code is generated linking to your encrypted profile.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Scan</h3>
+        <p>In an emergency, any smartphone camera scans the QR instantly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>GoldenHourID — Built by Kavya Sree Kalla</p>
+    <p>Educational prototype. Sample data only. Not for real medical use.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
